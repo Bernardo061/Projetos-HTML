@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 12 Html</title>
+</head>
+
+<body>
+    <h1>Exemplo 13 html - Formulários </h1>
+    <form action="paginaDestino.asmx" method="get">
+        <fieldset>
+            <legend>Dados pessoais</legend> <br>
+            <div>
+                <label for="">CPF</label><br>
+                <input type="number" name="txtCPF" id="txtCPF" required autofocus><br>
+            </div>
+            <br>
+            <div>
+                <label for="">RG</label><br>
+                <input type="number" name="txtRG" id="txtRG" required autofocus><br>
+            </div>
+            <br>
+            <div>
+                <label for="">Digite o seu Nome</label><br>
+                <input type="text" name="txtSeuNome" id="txtSeuNome"><br>
+            </div>
+            <br>
+            <div>
+                <label for="">Data de Nascimento</label><br>
+                <input type="date" name="dataNascimento" id="dataNascimento">
+            </div>
+            <br>
+            <div>
+                <label for="">Sexo</label><br>
+                <input type="radio" name="rdArea" id="rdArea" value="1">Feminino
+                <input type="radio" name="rdArea" id="rdArea" value="2">Masculino
+            </div>
+            <br>
+            <div>
+                <label for="">Estado Civil</label><br>
+                <select name="cboEstadoCivil" id="cboEstadoCivil">
+                    <option value="1">Casado</option>
+                    <option value="2">Solteiro</option>
+                    <option value="3">Divorciado</option>
+                    <option value="4">Viúvo(a)</option>
+                    <option value="5">União estavel</option>
+                    <option value="6">outros</option>
+                </select>
+            </div>
+            <br>
+        </fieldset>
+        <br>
+        <div>
+            <button type="submit">Cadastrar</button>
+        </div>
+    </form>
+</body>
+
+</html>

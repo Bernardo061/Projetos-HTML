@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 12 Html</title>
+</head>
+
+<body>
+    <h1>Exemplo 12 html - Formulários </h1>
+    <form action="paginaDestino.asmx" method="get">
+        <fieldset>
+            <legend>Dados pessoais</legend> <br>
+            <div>
+                <label for="">Nome</label><br>
+                <input type="text" name="txtNome" id="txtNome" required autofocus><br>
+            </div>
+            <br>
+            <div>
+                <label for="">Ano Nascimento</label><br>
+                <input type="number" name="txtAnoNascimento" id="txtAnoNascimento" required min="1950" max="2100"><br>
+            </div>
+            <br>
+            <div>
+                <label for="">Estado Civil</label><br>
+                <select name="cboEstadoCivil" id="cboEstadoCivil">
+                    <option value="1">Casado</option>
+                    <option value="2">Solteiro</option>
+                    <option value="3">Divorciado</option>
+                    <option value="4">Viúvo(a)</option>
+                    <option value="5">União estavel</option>
+                    <option value="6">outros</option>
+                </select>
+            </div>
+            <br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Dados Profissionais</legend>
+            <div>
+                <label for="">Natureza do Cargo</label>
+                <input type="checkbox" name="chkNaturezaCargo" id="chkNaturezaCargo" value="1">Gerência
+                <input type="checkbox" name="chkNaturezaCargo" id="chkNaturezaCargo" value="2">Financeiro
+                <input type="checkbox" name="chkNaturezaCargo" id="chkNaturezaCargo" value="3">Recepção
+                <input type="checkbox" name="chkNaturezaCargo" id="chkNaturezaCargo" value="4">Administrativo
+                <input type="checkbox" name="chkNaturezaCargo" id="chkNaturezaCargo" value="5">Jurídico
+            </div>
+            <br>
+            <div>
+                <label for="">Escolha uma área de interesse</label>
+                <input type="radio" name="rdArea" id="rdArea" value="1">FullStack
+                <input type="radio" name="rdArea" id="rdArea" value="2">Front End
+                <input type="radio" name="rdArea" id="rdArea" value="3">Back End
+                <input type="radio" name="rdArea" id="rdArea" value="4">Ciber Segurança
+                <input type="radio" name="rdArea" id="rdArea" value="5">Banco de Dados
+            </div>
+            <br>
+            <div>
+                <label for="">Mini Curriculo</label><br>
+                <textarea name="txtMiniCurriculo" id="txtMiniCurriculo" maxlength="300" cols="50" rows="10">
+
+                </textarea>
+            </div>
+        </fieldset>
+        <div>
+            <button type="submit">Cadastrar</button>
+        </div>
+    </form>
+</body>
+
+</html>
